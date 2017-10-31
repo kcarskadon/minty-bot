@@ -1,7 +1,8 @@
 {
   "name": "Minty",
   "description": "The Discord helper bot, Minty",
-  "version": "0.0.1",
+  "author": "Kenneth Carskadon",
+  "version": "0.0.2",
   "main": "bot.js",
   "scripts": {
     "start": "node bot.js"
