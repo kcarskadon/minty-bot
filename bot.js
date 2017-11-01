@@ -22,7 +22,6 @@ client.on('message', message => {
     } else
 
     if (message.content.startsWith(prefix + ' setstatus')) {
-        if(!argresult) argresult = 'online';
         client.user.setStatus(argresult);
     }
 });
