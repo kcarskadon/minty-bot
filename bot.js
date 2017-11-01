@@ -9,19 +9,13 @@ var prefix = "!minty"
 client.on('message', message => {
     //minty will ignore any message that is not addressed to her
     if (!message.content.startsWith(prefix)) return;
-    let args = message.content.split(' ').slice(1);
-    var argresult = args.join(' ');
+
     //prevent minty from responding to herself
     if (message.author.bot) return;
 
     //basic response cases
-
     if (message.content.startsWith(prefix + ' greet')) {
         message.reply('Hello!');
-    } else
-
-    if (message.content.startsWith(prefix + ' setgame')) {
-        client.user.setGame(argresult);
     }
 });
 
