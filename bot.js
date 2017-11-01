@@ -19,7 +19,7 @@ client.on('message', message => {
     //basic response cases
     if (message.content.startsWith(prefix + ' greet')) {
         message.reply('Hello!');
-    } else if ((message.content.startsWith(prefix + ' setstatus')) {
+    } else if (message.content.startsWith(prefix + ' setstatus')) {
         client.user.setStatus(argresult);
     }
 });
