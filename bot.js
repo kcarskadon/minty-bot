@@ -26,7 +26,7 @@ client.on('message', message => {
     } else
 
     if (message.content.startsWith(prefix + 'play')) {
-        client.user.setGame(argresult);
+        client.user.setPresence({ game: { name: argresult, type: 0 } });
     }
 });
 
