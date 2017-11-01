@@ -11,11 +11,18 @@ client.on('message', message => {
     if (!message.content.startsWith(prefix)) return;
 
     //prevent minty from responding to herself
-    if (message.author === client.user) return;
+    if (message.author.bot) return;
+
+    let args = message.content.split(' ').slice(1);
+    var argresult = args.join(' ');
 
     //basic response cases
     if (message.content.startsWith(prefix)) {
         message.reply('Hello!');
+    } else
+
+    if (message.content.startsWith(prefix + 'setgame')) {
+        client.user.setGame(argresult);
     }
 });
 
