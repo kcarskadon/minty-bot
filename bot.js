@@ -17,11 +17,11 @@ client.on('message', message => {
     var argresult = args.join(' ');
 
     //basic response cases
-    //Greet Minty
+
     if (message.content.startsWith(prefix + ' greet')) {
         message.reply('Hello!');
     } else
-    //Change the game that Minty is currently playing
+
     if (message.content.startsWith(prefix + ' setgame')) {
         client.user.setGame(argresult);
     }
