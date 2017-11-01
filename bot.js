@@ -5,9 +5,10 @@ client.on('ready', () => {
   console.log('I am ready!');
 });
 
+var prefix = "!Minty"
 client.on('message', message => {
-  if (message.content === 'Hello Minty') {
-    message.reply('Hello!');
+  if (message.content.startsWith (prefix)) {
+      message.reply('Hello!');
   }
 });
 
