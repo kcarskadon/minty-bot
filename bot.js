@@ -25,7 +25,7 @@ client.on('message', message => {
         client.user.setStatus(argresult);
     } else
 
-    if (message.content.startsWith(prefix + 'setgame')) {
+    if (message.content.startsWith(prefix + 'play')) {
         client.user.setGame(argresult);
     }
 });
