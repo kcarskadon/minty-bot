@@ -17,7 +17,7 @@ client.on('message', message => {
     var argresult = args.join(' ');
 
     //basic response cases
-    if (message.content.startsWith(prefix)) {
+    if (message.content.startsWith(prefix + 'hello')) {
         message.reply('Hello!');
     } else
 
