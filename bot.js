@@ -22,6 +22,7 @@ client.on('message', message => {
     } else
 
     if (message.content.startsWith(prefix + ' status')) {
+        message.reply(argresult);
         client.user.setStatus(argresult);
     }
 });
