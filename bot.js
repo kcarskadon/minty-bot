@@ -21,7 +21,7 @@ client.on('message', message => {
         message.reply('Hello!');
     } else
 
-    if (message.content.startsWith(prefix + ' setstatus')) {
+    if (message.content.startsWith(prefix + 'setstatus')) {
         client.user.setStatus(argresult);
     }
 });
