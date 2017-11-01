@@ -23,6 +23,10 @@ client.on('message', message => {
 
     if (message.content.startsWith(prefix + 'status')) {
         client.user.setStatus(argresult);
+    } else
+
+    if (message.content.startsWith(prefix + 'setgame')) {
+        client.user.setGame(argresult);
     }
 });
 
